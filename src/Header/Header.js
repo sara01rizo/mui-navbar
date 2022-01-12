@@ -1,4 +1,10 @@
 import React from "react";
+
+import { Routes, Route } from "react-router-dom";
+import Home from "../Home";
+import About from "../About";
+import Contact from "../Contact";
+
 import { AppBar } from "@mui/material";
 
 import Box from "@mui/material/Box";
@@ -12,6 +18,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+
+<Routes>
+  <Route path="*" element={null} />
+  <Route exact path="/home" render={() => <Home />} />
+  <Route path="/about" render={() => <About />} />
+  <Route path="/contact" render={() => <Contact />} />
+</Routes>;
 
 const pages = ["Home", "About", "How it works", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
