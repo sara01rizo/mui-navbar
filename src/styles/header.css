@@ -1,0 +1,7 @@
+img {
+  width: 1580px;
+  height: 990px;
+  object-position: center top;
+  position: relative;
+  z-index: 22;
+}
