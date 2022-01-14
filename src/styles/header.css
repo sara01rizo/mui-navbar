@@ -5,3 +5,9 @@ img {
   position: relative;
   z-index: 22;
 }
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 380%;
+  }
+}
