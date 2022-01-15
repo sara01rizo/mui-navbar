@@ -48,24 +48,24 @@ function Navbar() {
       <Toolbar className={classes.Toolbar}>
         <div className="Logo" id="Logo">
           <Typography variant="h4" className={classes.logo}>
-            Way To Go
+            WAY TO GO
           </Typography>
         </div>
         {isMobile ? (
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-            <Link exact to="/home" className={classes.link}>
-              Home
+            <Link exact to="/HOME" className={classes.link}>
+              HOME
             </Link>
-            <Link to="/about" className={classes.link}>
-              About
+            <Link to="/ABOUT" className={classes.link}>
+              ABOUT
             </Link>
-            <Link to="/contact" className={classes.link}>
-              Contact
+            <Link to="/HOW TO" className={classes.link}>
+              HOW IT
             </Link>
-            <Link to="/faq" className={classes.link}>
-              FAQ
+            <Link to="/CONTACT" className={classes.link}>
+              CONTACT
             </Link>
           </div>
         )}
